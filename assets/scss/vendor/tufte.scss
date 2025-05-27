@@ -538,9 +538,6 @@ label.margin-toggle:not(.sidenote-number) {
     .marginnote {
         display: inline;
     }
-    .marginimage {
-        display: block;
-    }
     .margin-toggle:checked + .sidenote,
     .margin-toggle:checked + .marginnote {
         display: block;
