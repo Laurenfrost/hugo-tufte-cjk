@@ -9,7 +9,7 @@
                 <h1 class="content-title">
                   <a href="{{ .RelPermalink }}">{{ .Title }}{{ if .Draft }} :: Draft {{end}}</a>
                 </h1>
-                <p>{{ truncate 120  .Summary }}</p>
+                <p>{{ truncate 120  .Plain }}</p>
                 <p><a href="{{ .RelPermalink  }}">Read On &rarr;</a></p>
             {{ end  }}
             {{ partial "footer.html" . }}
