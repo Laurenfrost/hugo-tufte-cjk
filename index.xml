@@ -1,26 +1,60 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo-tufte Theme Example Site</title><link>https://laurenfrost.github.io/hugo-tufte-cjk/</link><description>Recent content on Hugo-tufte Theme Example Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 18 Aug 2020 17:31:35 +0000</lastBuildDate><atom:link href="https://laurenfrost.github.io/hugo-tufte-cjk/index.xml" rel="self" type="application/rss+xml"/><item><title>Towards Transparent CPU Scheduling</title><link>https://laurenfrost.github.io/hugo-tufte-cjk/post/linux-cpu-scheduling/</link><pubDate>Tue, 18 Aug 2020 17:31:35 +0000</pubDate><guid>https://laurenfrost.github.io/hugo-tufte-cjk/post/linux-cpu-scheduling/</guid><description>最近在看 OSTEP，作者在进程调度部分推荐了该论文：
-Joseph T. Meehean, Towards Transparent CPU Scheduling, University of Wisconsin–Madison, 2011
-于是我在有道翻译的帮助下翻译该博士论文，有些地方本人进行了润色。
-本文提出用科学的方法对 CPU 调度器有更深入的了解； 我们使用这种方法来解释和理解 CPU 调度器有时不稳定的行为。这种方法首先将受控的工作负载引入商品操作系统，并观察 CPU 调度器的行为。通过这些观察，我们能够推断底层 CPU 调度策略，并创建预测调度行为的模型。
-在将科学分析应用于 CPU 调度器方面，我们已经取得了两项进展。首先是 CPU Futures，这是一个嵌入到 CPU 调度器和用户空间控制器中的预测调度模型的组合，后者使用来自这些模型的反馈来指导应用程序。我们基于两种不同的调度范例(分时和比例-份额)，为两种不同的 Linux 调度器(CFS 和 O(1))开发了这些预测模型。通过三个不同的案例研究，我们演示了应用程序可以使用我们的预测模型将来自低重要性应用程序的干扰减少 70% 以上，将 Web 服务器的供应不足减少一个数量级，并执行与 CPU 调度器相矛盾的调度策略。
-我们的第二个贡献是 Harmony。这是一个框架和一组实验，用于从普通操作系统中提取多处理器调度策略。我们使用这个工具提取和分析三个 Linux 调度器的策略：O(1)、CFS 和 BFS。这些调度器通常执行截然不同的策略。从高层次的角度来看，O(1) 调度器谨慎地选择要迁移的进程,更看重处理器亲缘性 (Processor Affinity)。相反，CFS 则不断地寻找更好的平衡，最终选择了随机迁移进程。而 BFS 则非常看重公平性，经常忽略处理器关联性。
-导论 把自己渴望的东西托付给漫不经心的希望，用至高无上的理由把自己不渴望的东西推到一边。这就是人类的习性。
-Thucydides 目前，应用程序、开发人员和系统研究人员都将最佳工作 CPU 调度器视为可靠的黑箱。依赖这些调度器来提供底层但至关重要的服务。在过去的几十年里，处理器快速增长的性能支持了这种依赖和映像。
-单处理器速度不断增长的结束意味着这些假设应该重新考虑。如果对中等负载下的CPU调度器进行更仔细的检查，就会发现它们可以提供反复无常的服务，并实现与依赖于它们的应用程序冲突的资源争用策略。这种看似不稳定的行为对应用程序的可感知可靠性有可怕的后果；它会导致缓慢的响应时间，病态的行为，甚至应用程序失败。
-在这项工作中，我们建议采取科学的方法来理解CPU调度程序；我们开始通过收集观察、生成假设和生成预测模型来揭开CPU调度器的神秘面纱。例如，对 CPU 调度的进一步研究表明，它有时不稳定的行为并不是不可预测的，而只是几个善意策略的不幸组合结果。这种方法产生的观察结果和预测模型使 CPU 调度对应用程序更加透明(并且可由应用程序控制)，并使研究者们能够改进或细化调度策略。</description></item><item><title>Hugo-Tufte Features</title><link>https://laurenfrost.github.io/hugo-tufte-cjk/post/tufte-features/</link><pubDate>Sat, 20 Feb 2016 13:56:01 -0800</pubDate><guid>https://laurenfrost.github.io/hugo-tufte-cjk/post/tufte-features/</guid><description>&lt;p>This is a quick demonstration post. It serves as an example of the features
-of this theme. 同时还添加了大量中文/日语文本，既是作为测试，亦可看作参考。 One of them is $ \LaTeX $ via &lt;a href="https://katex.org/">Katex&lt;/a>.&lt;/p>
-&lt;h2 id="a-bit-about-mathematics-来一点数学">A Bit About Mathematics 来一点数学&lt;/h2>
-&lt;div class="epigraph">
-&lt;blockquote>
-&lt;p>This is an example of an epigraph with some math
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo-tufte Theme Example Site</title><link>https://laurenfrost.github.io/hugo-tufte-cjk/</link><description>Recent content on Hugo-tufte Theme Example Site</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 18 Aug 2020 17:31:35 +0000</lastBuildDate><atom:link href="https://laurenfrost.github.io/hugo-tufte-cjk/index.xml" rel="self" type="application/rss+xml"/><item><title>Towards Transparent CPU Scheduling</title><link>https://laurenfrost.github.io/hugo-tufte-cjk/post/linux-cpu-scheduling/</link><pubDate>Tue, 18 Aug 2020 17:31:35 +0000</pubDate><guid>https://laurenfrost.github.io/hugo-tufte-cjk/post/linux-cpu-scheduling/</guid><description>&lt;p&gt;最近在看 &lt;a href="http://pages.cs.wisc.edu/~remzi/OSTEP/"&gt;&lt;em&gt;OSTEP&lt;/em&gt;&lt;/a&gt;，作者在进程调度部分推荐了该论文：&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.cs.wisc.edu/adsl/Publications/meehean-thesis11.pdf"&gt;Joseph T. Meehean, &lt;em&gt;Towards Transparent CPU Scheduling&lt;/em&gt;, University of Wisconsin–Madison, 2011&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;于是我在有道翻译的帮助下翻译该博士论文，有些地方本人进行了润色。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;本文提出用科学的方法对 CPU 调度器有更深入的了解； 我们使用这种方法来解释和理解 CPU 调度器有时不稳定的行为。这种方法首先将受控的工作负载引入商品操作系统，并观察 CPU 调度器的行为。&lt;strong&gt;通过这些观察&lt;/strong&gt;，我们能够推断底层 CPU 调度策略，并创建预测调度行为的模型。&lt;/p&gt;
+&lt;p&gt;在将科学分析应用于 CPU 调度器方面，我们已经取得了两项进展。首先是 CPU Futures，这是一个嵌入到 CPU 调度器和用户空间控制器中的预测调度模型的组合，后者使用来自这些模型的反馈来指导应用程序。我们基于两种不同的调度范例(分时和比例-份额)，为两种不同的 Linux 调度器(CFS 和 O(1))开发了这些预测模型。通过三个不同的案例研究，我们演示了应用程序可以使用我们的预测模型将来自低重要性应用程序的干扰减少 70% 以上，将 Web 服务器的供应不足减少一个数量级，并执行与 CPU 调度器相矛盾的调度策略。&lt;/p&gt;
+&lt;p&gt;我们的第二个贡献是 &lt;em&gt;Harmony&lt;/em&gt;。这是一个框架和一组实验，用于从普通操作系统中提取多处理器调度策略。我们使用这个工具提取和分析三个 Linux 调度器的策略：O(1)、CFS 和 BFS。这些调度器通常执行截然不同的策略。从高层次的角度来看，O(1) 调度器谨慎地选择要迁移的进程,更看重&lt;ruby&gt;&lt;rb&gt;处理器亲缘性&lt;/rb&gt;&lt;rp&gt; (&lt;/rp&gt;&lt;rt&gt;Processor Affinity&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;&lt;/ruby&gt;。相反，CFS 则不断地寻找更好的平衡，最终选择了随机迁移进程。而 BFS 则非常看重公平性，经常忽略处理器关联性。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="导论"&gt;导论&lt;/h2&gt;
+&lt;div class="epigraph"&gt;
+&lt;blockquote&gt;
+
+&lt;p&gt;把自己渴望的东西托付给漫不经心的希望，用至高无上的理由把自己不渴望的东西推到一边。这就是人类的习性。&lt;/p&gt;
+
+&lt;footer&gt;
+Thucydides
+
+
+&lt;/a&gt;
+
+&lt;/footer&gt;
+
+&lt;blockquote&gt;
+&lt;/div&gt;
+
+&lt;p&gt;目前，应用程序、开发人员和系统研究人员都将最佳工作 CPU 调度器视为可靠的黑箱。依赖这些调度器来提供底层但至关重要的服务。在过去的几十年里，处理器快速增长的性能支持了这种依赖和映像。&lt;/p&gt;
+&lt;p&gt;单处理器速度不断增长的结束意味着这些假设应该重新考虑。如果对中等负载下的CPU调度器进行更仔细的检查，就会发现它们可以提供反复无常的服务，并实现与依赖于它们的应用程序冲突的资源争用策略。这种看似不稳定的行为对应用程序的可感知可靠性有可怕的后果；它会导致缓慢的响应时间，病态的行为，甚至应用程序失败。&lt;/p&gt;
+&lt;p&gt;在这项工作中，我们建议采取科学的方法来理解CPU调度程序；我们开始通过收集观察、生成假设和生成预测模型来揭开CPU调度器的神秘面纱。例如，对 CPU 调度的进一步研究表明，它有时不稳定的行为并不是不可预测的，而只是几个善意策略的不幸组合结果。这种方法产生的观察结果和预测模型使 CPU 调度对应用程序更加透明(并且可由应用程序控制)，并使研究者们能够改进或细化调度策略。&lt;/p&gt;
+&lt;p&gt;本文讨论了我们在科学分析 CPU 调度方面所做的两个改进。在第一个 CPU Futures 中，我们创建并演示嵌入到 CPU 调度器中的预测模型的价值。应用程序使用这些预测模型来主动引导两个当代的 Linux CPU 调度程序实现它们所期望的调度策略。在第二部分，我们实现了一个多处理器 CPU 调度观察的收集框架。然后，我们使用这个名为 &lt;em&gt;Harmony&lt;/em&gt; 的框架从三个 Linux CPU 调度器(O(1)、CFS 和 BFS)提取 CPU 调度策略。&lt;/p&gt;</description></item><item><title>Hugo-Tufte Features</title><link>https://laurenfrost.github.io/hugo-tufte-cjk/post/tufte-features/</link><pubDate>Sat, 20 Feb 2016 13:56:01 -0800</pubDate><guid>https://laurenfrost.github.io/hugo-tufte-cjk/post/tufte-features/</guid><description>&lt;p&gt;This is a quick demonstration post. It serves as an example of the features
+of this theme. 同时还添加了大量中文/日语文本，既是作为测试，亦可看作参考。 One of them is $ \LaTeX $ via &lt;a href="https://katex.org/"&gt;Katex&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="a-bit-about-mathematics-来一点数学"&gt;A Bit About Mathematics 来一点数学&lt;/h2&gt;
+&lt;div class="epigraph"&gt;
+&lt;blockquote&gt;
+
+&lt;p&gt;This is an example of an epigraph with some math
 $ \mathbb N \subseteq \mathbb R $
-to start the beginning of a section.&lt;/p>
-&lt;footer>
-Shawn O&amp;#39;Hare,
-&lt;cite>Math is Fun&lt;/cite>
-&lt;/a>
-&lt;/footer>
-&lt;blockquote>
-&lt;/div></description></item><item><title>About This Site</title><link>https://laurenfrost.github.io/hugo-tufte-cjk/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://laurenfrost.github.io/hugo-tufte-cjk/about/</guid><description>Hello, I&amp;rsquo;m an example site that uses the Hugo Tufte theme.
-Here is a bullet list:
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu felis bibendum ut tristique et. Volutpat odio facilisis mauris sit amet massa. Sed id semper risus in hendrerit gravida rutrum. Risus pretium quam vulputate dignissim suspendisse in est ante. Bibendum neque egestas congue quisque egestas diam in arcu.</description></item></channel></rss>
+to start the beginning of a section.&lt;/p&gt;
+
+&lt;footer&gt;
+Shawn O&amp;#39;Hare, 
+
+&lt;cite&gt;Math is Fun&lt;/cite&gt;
+&lt;/a&gt;
+
+&lt;/footer&gt;
+
+&lt;blockquote&gt;
+&lt;/div&gt;</description></item><item><title>About This Site</title><link>https://laurenfrost.github.io/hugo-tufte-cjk/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://laurenfrost.github.io/hugo-tufte-cjk/about/</guid><description>&lt;p&gt;Hello, I&amp;rsquo;m an example site that uses the Hugo Tufte theme.&lt;/p&gt;
+&lt;p&gt;Here is a bullet list:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/li&gt;
+&lt;li&gt;Arcu felis bibendum ut tristique et. Volutpat odio facilisis mauris sit amet massa.&lt;/li&gt;
+&lt;li&gt;Sed id semper risus in hendrerit gravida rutrum.
+&lt;ul&gt;
+&lt;li&gt;Risus pretium quam vulputate dignissim suspendisse in est ante. Bibendum neque egestas congue quisque egestas diam in arcu.&lt;/li&gt;
+&lt;li&gt;Nulla porttitor massa id neque aliquam. Laoreet non curabitur gravida arcu ac tortor dignissim convallis.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Sit amet consectetur adipiscing elit.&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>
