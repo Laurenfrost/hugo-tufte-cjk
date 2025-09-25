@@ -6,7 +6,7 @@ homepage = "https://github.com/Laurenfrost/hugo-tufte-cjk"
 demo = "https://laurenfrost.github.io/hugo-tufte-cjk/"
 tags = ["blog", "tufte", "minimal", 'light', "personal"]
 features = ["math", "tufte-css", "tufte"]
-min_version = 0.83
+min_version = 0.150
 
 authors = [
   {name = "Shawn O'Hare", homepage = "http://www.shawnohare.com"},
